@@ -12,12 +12,9 @@ Plug 'autozimu/LanguageClient-neovim', {
 
 call plug#end()
 
-set hidden
-
 let g:LanguageClient_serverCommands = {
     \ 'cpp': ['expand('~/cquery/build/cquery')', '--log-file=/tmp/cq.log'],
     \ }
-
 
 let g:LanguageClient_loadSettings = 1 " Use an absolute configuration path if you want system-wide settings
 let g:LanguageClient_settingsPath = expand('~/.config/nvim/settings.json')
@@ -36,7 +33,7 @@ let g:LanguageClient_trace = 'verbose'
 set laststatus=2
 set t_Co=256
 set tabstop=4
-"set wildmenu "tab completion
+set hidden
 set signcolumn="yes"  
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
