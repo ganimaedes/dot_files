@@ -2,7 +2,7 @@ set nocompatible
 set backspace=indent,eol,start
 autocmd Filetype cpp setlocal tabstop=4
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
